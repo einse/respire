@@ -179,7 +179,7 @@
             var guestStatus = document.getElementById('guestStatus');
             guestStatus.classList.remove('hidden');
             var guestStatusText = document.getElementById('guestStatusText');
-            guestStatusText.innerText = 'To use the app please fill out the form & press "Log In" or "Sign Up".';
+            guestStatusText.innerText = 'To use the app please fill out the form from the left and then press "Log In" or "Sign Up".';
         }
     });
     
