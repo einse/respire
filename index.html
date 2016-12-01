@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Респаэр</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="jquery-3.1.0.js"></script>
+    <script defer src="jquery.mousewheel.min.js"></script>
+    <script defer src="jwheel.js"></script>
+    <script defer src="calendar.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="layout layout_additional" id="additional-layout"></div>
+    <div class="layout layout_container hidden" id="container">
+        <div class="paper" id="paper">
+            <div class="mount" data-a="b">
+                <div class="mount__button mount__button_text" data-a="b">Earlier</div>
+            </div>
+            <div class="sets-collection" id="sets-collection">
+                <div class="set set_entries">
+                    <div class="set__item set__item_entry"></div>
+                </div>
+            </div>
+            <div class="mount" data-a="f" style="padding-right:1.2cm">
+                <div class="mount__button mount__button_text" data-a="f">Later</div>
+            </div>
+        </div>
+    </div>
+    <div class="layout layout_authentication">
+        <div class="paper">
+            <div class="sets-collection">
+                <div class="set">
+                    <div class="set__group">
+                        <div class="set__item set__item_field">
+                            <label>Email:</label>
+                            <input id="txtEmail" type="email" tabindex="1">
+                        </div>
+                        <div class="set__item set__item_field">
+                            <label>Password:</label>
+                            <input id="txtPassword" type="password" tabindex="2">
+                        </div>
+                        <div class="set__item set__item_button mount" id="btnLogin" tabindex="3">
+                            <div class="mount__button mount__button_set">Log In</div>
+                        </div>
+                        <div class="set__item set__item_button mount" id="btnSignup" tabindex="4">
+                            <div class="mount__button mount__button_set">Sign Up</div>
+                        </div>
+                    </div>
+                    <div class="set__group hidden" id="loginErrorInfoWrapper">
+                        <div class="set__item" id="loginErrorInfo"></div>
+                    </div>
+                </div>
+                <div class="set hidden" id="guestStatus">
+                    <div class="set__group">
+                        <div class="set__item" id="guestStatusText"></div>
+                    </div>
+                </div>
+                <div class="set hidden" id="currentUserInfo">
+                    <div class="set__group">
+                        <div class="set__item">Current user: <span id="currentUid">--Not defined--</span></div>
+                        <div class="set__item set__item_button mount" id="btnLogout">
+                            <div class="mount__button mount__button_set">Log Out</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout layout_calendar hidden">
+        <div class="paper">
+            <div class="sets-collection">
+                <div class="set">
+                    <div class="set__group">
+                        <div class="set__item set__item_field">
+                            <label>Specify any date:</label>
+                            <input type="text" tabindex="1" id="txtGoToDate">
+                            Format: YYYY-MM-DD
+                        </div>
+                        <div class="set__item set__item_button mount" tabindex="2" id="btnGoToDate">
+                            <div class="mount__button mount__button_set">Go to date</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel_right hidden">
+        <div class="panel__mounts-group">
+            <div class="mount mount_icon" id="scrollMount">
+                <div class="mount__button mount__button_icon" data-a="t" data-destination="scroll">
+                    <img class="mount__icon" src="svg-rspr/android-map.svg">
+                </div>
+            </div>
+            <div class="mount mount_icon">
+                <div class="mount__button mount__button_icon" data-a="t" data-destination="calendar">
+                    <img class="mount__icon" src="svg-rspr/android-calendar.svg">
+                </div>
+            </div>
+        </div>
+        <div class="panel__mounts-group">
+            <div class="mount mount_icon active">
+                <div class="mount__button mount__button_icon" data-a="t" data-destination="authentication">
+                    <img class="mount__icon" src="svg-rspr/key.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,207 @@
+body {
+    font-family: 'Liberation Sans', 'Arial', sans-serif;
+    font-size: small;
+    background-color: lightcoral;
+    margin: 0;
+}
+
+/**
+ * Lit part
+ */
+
+body {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#additional-layout {
+    
+}
+
+.layout {
+
+}
+
+.layout_additional {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.layout_authentication {
+    position: absolute;
+    min-width: 100%;
+    background-color: lightcoral;
+}
+
+.layout_calendar {
+    position: absolute;
+    min-width: 100%;
+    background-color: lightcoral;
+}
+
+.layout_container {
+    position: absolute;
+    min-width: 100%;
+}
+
+.container {
+    position: absolute;
+    min-width: 100%;
+}
+
+.panel {
+    position: fixed;
+    min-width: 1cm;
+    max-width: 1cm;
+    background-color: white;
+}
+
+.panel_left {
+    left: 0;
+    border-right: 0.01cm solid silver;
+}
+
+.panel_right {
+    right: 0;
+    border-left: 0.01cm solid silver;
+    border-bottom: 0.01cm solid silver;
+}
+
+.paper {
+/*
+    margin: 0 1.2cm 0 0;
+*/
+}
+
+/**
+ * Flexbox part
+ */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layout_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > * {
+    flex-grow: 1;
+}
+
+.layout_container > * {
+    flex-grow: 1;
+}
+
+.paper {
+    display: flex;
+}
+
+.panel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-start;
+}
+
+.panel__mounts-group {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.mount {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sets-collection {
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.set {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0.1cm;
+    flex: 0 0 auto;
+}
+
+.set__group {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/**
+ * Other rules
+ */
+
+.set__item {
+    width: 188px;
+    background-color: white;
+    min-height: 1.0rem;
+    padding: 0.5rem;
+}
+
+.set__item:focus {
+    background-color: skyblue;
+}
+
+.set__item_field input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-top: 2px dotted rgba(255, 255, 255, 0);
+    border-bottom: 1px dotted black;
+    padding: 0;
+}
+
+.set__item_field input:focus {
+    outline: none;
+    background-color: skyblue;
+}
+
+.set__item_field_curfocus {
+    background-color: skyblue;
+}
+
+.mount {
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.mount__button {
+    
+}
+
+.mount__button {
+    margin: 0.1cm;
+}
+
+.mount__button_text {
+    background: white;
+    padding: 0.5rem;
+}
+
+.mount__button_set {
+    padding: 0;
+    margin: 0;
+}
+
+.mount__icon {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: skyblue;
+}
+
+.set__group {
+    margin-bottom: 0.1cm;
+}
