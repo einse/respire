@@ -9,8 +9,7 @@ The integrity of the notes you made and even of your account is not guaranteed. 
 
 Copying and using files from this repo is welcome while accepting the license terms (see the LICENSE file).
 
-## Hot Keys
+## Keys
 
-Enter - break the line.
-Ctrl+Enter - create a new entry.
-
++ Enter - break the line.
++ Ctrl+Enter - create a new entry.
