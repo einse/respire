@@ -168,12 +168,12 @@ body {
 }
 
 .mount {
-    cursor: pointer;
-    -webkit-user-select: none;
+
 }
 
 .mount__button {
-    
+    cursor: pointer;
+    -webkit-user-select: none;
 }
 
 .mount__button {
