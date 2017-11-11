@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
 body {
-    font-family: 'Liberation Sans', 'Arial', sans-serif;
+    font-family: 'Noto Sans', 'Liberation Sans', 'Arial', sans-serif;
     font-size: small;
     background-color: lightcoral;
     margin: 0;
