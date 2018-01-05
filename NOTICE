@@ -27,8 +27,7 @@ THE SOFTWARE.
 
 =============================================================================
 
-Some JS files are third-party ones:
+Some JS-files belong to third parties and have their own license terms:
 - jquery-3.1.0.js,
 - jquery.mousewheel.min.js,
 - jwheel.js.
-See them to find out their license terms.
