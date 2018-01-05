@@ -140,6 +140,9 @@ var Calendar = {
 			return false;
 		}
 		for (var value in parsed) {
+			if (parsed[value].length < 2) {
+				return false;
+			}
 			parsed[value] = Number(parsed[value]);
 			if (parsed[value] === 0) {
 				//~ console.log('zero');
