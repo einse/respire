@@ -207,3 +207,8 @@ body {
 .set__group {
     margin-bottom: 0.1cm;
 }
+
+input {
+    font-family: 'Arimo', 'Liberation Sans', 'Arial', sans-serif;
+    font-size: small;
+}
