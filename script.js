@@ -1,11 +1,11 @@
 (function () {
     // Initialize Firebase
     var config = {
-        apiKey: "AIzaSyChru_HZq5-Z91nBxU1lSyY1YqwZcbdv_Y",
-        authDomain: "respire2-53f39.firebaseapp.com",
-        databaseURL: "https://respire2-53f39.firebaseio.com",
-        storageBucket: "respire2-53f39.appspot.com",
-        messagingSenderId: "359389679609"
+        apiKey: "AIzaSyC4upjsxpRwXa26Sf8pv1EuJ_Rxnz7nwew",
+        authDomain: "respire3-hi.firebaseapp.com",
+        databaseURL: "https://respire3-hi.firebaseio.com",
+        storageBucket: "respire3-hi.appspot.com",
+        messagingSenderId: "43071900023"
     };
     firebase.initializeApp(config);
     
