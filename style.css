@@ -173,6 +173,10 @@ body {
 
 }
 
+.mount:hover {
+  background-color: #ccc;
+}
+
 .mount__button {
   cursor: pointer;
   -webkit-user-select: none;
