@@ -4,9 +4,6 @@
         apiKey: "AIzaSyACPJoPb25PsS_e1Tqzp2STIIbNWFaMQ4A",
         authDomain: "respire4-go.firebaseapp.com",
         databaseURL: "https://respire4-go.firebaseio.com",
-        projectId: "respire4-go",
-        storageBucket: "respire4-go.appspot.com",
-        messagingSenderId: "751107692204"
     };
     firebase.initializeApp(config);
     
